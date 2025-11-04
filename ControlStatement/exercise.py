@@ -8,30 +8,30 @@
 ##         statement(s)
 ## else :
 ##     statement(s)
-month: str = input("Enter your birth month: ")
-if month == "January":
+month: str = input("Enter your birth month: ").lower()
+if month == "january":
     print("Congratulations you were born in the first month of the year  ")
-elif month == "Febuary":
+elif month == "febuary":
     print("Congratulations you were born in the second month of the year ")
-elif month == "March":
+elif month == "march":
     print("Congratulations you were born in the third month of the year ")
-elif month == "April":
+elif month == "april":
     print("Congratulations you were born in the fourth month of the year")
-elif month == "May":
+elif month == "may":
     print("Congratulation you were born in the fifth month of the year")
-elif month == "June":
+elif month == "june":
     print("Congratulations you were born in the sixth month of the year")
-elif month == "July":
+elif month == "july":
     print("Congratulations you were born in the seventh month of the year")
-elif month == "August":
+elif month == "august":
     print("Congratulations you were born in the eigth month of the year")
-elif month == "September":
+elif month == "september":
     print("Congratulations you were born in the nineth month of the year")
-elif month == "October":
+elif month == "october":
     print("Congratulation you were born in the tenth month of the year  ")
-elif month == "November":
+elif month == "november":
     print("Congratulations you were born in the eleventh month of the year")
-elif month == "December":
+elif month == "december":
     print("Congratulation you were born in the last month of the year ")
 else :
     print("Pls enter the name of the month \nThank you! ")
