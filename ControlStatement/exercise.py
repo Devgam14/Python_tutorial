@@ -8,6 +8,7 @@
 ##         statement(s)
 ## else :
 ##     statement(s)
+
 month: str = input("Enter your birth month: ").lower()
 if month == "january":
     print("Congratulations you were born in the first month of the year  ")
