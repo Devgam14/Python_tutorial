@@ -10,4 +10,3 @@ print(index_val)
 print(data.start)
 print(data.stop)
 print(data.step)
- 
