@@ -7,3 +7,5 @@ print([x for x in values if x > 20])
 print([ x for x in values if x % 2 == 0])
 names = ["John" , "Paul", "Peter", "Paul", "James", "Jane", "Mary"]
 print([y for y in names for z in y if z == "a"])
+
+print([y for y in names for char in y if char == "u"])
