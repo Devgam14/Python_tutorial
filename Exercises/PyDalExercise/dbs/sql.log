@@ -1,0 +1,30 @@
+timestamp: 2026-02-05T10:57:58.203235
+CREATE TABLE "My_Table"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "names" CHAR(50),
+    "age" INTEGER,
+    "dob" DATE,
+    "gender" CHAR(10),
+    "salary" DOUBLE,
+    "email" CHAR(50) UNIQUE,
+    "phone" CHAR(15) UNIQUE
+);
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!

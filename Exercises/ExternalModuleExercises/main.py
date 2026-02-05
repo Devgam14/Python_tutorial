@@ -2,14 +2,14 @@ from prettytable import PrettyTable
 from faker import Faker
 ## Initializing librairies 
 faker_lib = Faker("en_NG")
-table = PrettyTable(["Theme" , "ID" ,"Firstname", "Lastname" , "Age" , "Date of birth" , "Salary"])
+table = PrettyTable([ "ID" ,"Firstname", "Lastname" , "Age" , "Date of birth" , "Salary"])
 currency = faker_lib.currency_symbol(code="NGN")
 lists = []
 listStore = []
 salary_list = []
 table.align = "l"
 
-for _ in range(1,10) :
+for _ in range(1,100) :
     ## generating fake details
     first_name = faker_lib.first_name()
     last_name = faker_lib.last_name()
@@ -24,8 +24,8 @@ for _ in range(1,10) :
 
 average = round(sum(salary_list) / len(salary_list))
 table.add_rows(listStore)
-table.add_row(["Min", f"{currency}{min(salary_list)}" , "" , "" , "" , "" , ""])
-table.add_row(["Max", f"{currency}{max(salary_list)}" , "" , "" , "" , "" , ""])
-table.add_row(["Avg salary", f"{currency}{average}" , "" , "" , "" , "" , ""])
+table.add_row(["Min", f"{currency}{min(salary_list)}" , "" , "" , "" , ""])
+table.add_row(["Max", f"{currency}{max(salary_list)}" , "" , "" , "" , "" ])
+table.add_row(["Avg salary", f"{currency}{average}" , "" , "" , "" , "" ])
 
 print(table)

@@ -26,4 +26,4 @@ print(users_scores)
 gam = "hwl"
 user = dict(one = "paul" , two = "john", three= "ann", four = gam)
 print(user)
-
+print(user["one"])
