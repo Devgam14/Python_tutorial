@@ -9,7 +9,7 @@ listStore = []
 salary_list = []
 table.align = "l"
 
-for _ in range(1,100) :
+for _ in range(1,10) :
     ## generating fake details
     first_name = faker_lib.first_name()
     last_name = faker_lib.last_name()
@@ -18,7 +18,7 @@ for _ in range(1,100) :
     salary = faker_lib.random_int(min=3000, max=1000090)
     id = faker_lib.random_int(min=1, max=1000)
     salary_list.append(salary)
-    lists.append([ "" , id , first_name , last_name , age , dob , f"{currency}{salary}"])
+    lists.append([ id , first_name , last_name , age , dob , f"{currency}{salary}"])
     listStore.append(lists[0])
     lists = []
 

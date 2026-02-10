@@ -17,3 +17,4 @@ table.vertical_char = "|" ## uses the passed single string to  set the vertical 
 # print(table.get_csv_string())
 # print(table.get_formatted_string())
 # print(table.get_latex_string())
+print(table)

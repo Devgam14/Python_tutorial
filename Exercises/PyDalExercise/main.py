@@ -31,7 +31,7 @@ for _ in range(1,30):
     month = int(faker_mod.month())
     day = faker_mod.random_int(min=1 , max=28)
     salary = faker_mod.pyfloat(positive=True , left_digits=6 , right_digits=2 ,min_value=10000 , max_value=1_000_000)
-    connection.My_Table.insert(Names=f"{faker_mod.name_male()}" , Age=f"{faker_mod.random_int(min=19 , max=60)}" , DOB=date(int(year),month ,int(day)) , Gender="Male" , Salary=float(salary), Email=f"{faker_mod.email()}" , Phone=f"{str(faker_mod.phone_number())}")
+    connection.My_Table.insert(Names=f"{faker_mod.name_male()}" , Age=f"{faker_mod.random_int(min=19 , max=60)}" , DOB=date(int(year),month ,int(day)) , Gender=f"{faker_mod.random_element(elements=('MALE' , 'FEMALE'))}" , Salary=float(salary), Email=f"{faker_mod.email()}" , Phone=f"{str(faker_mod.phone_number())}")
 rows = connection(connection.My_Table).select()
 for row in rows:
     store1.append([row["Names"], row['Age'] , row["DOB"], row["Gender"] , f"{country_code}{row["Salary"]}" , row["Email"] , row["Phone"]])

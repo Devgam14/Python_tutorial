@@ -1,0 +1,7 @@
+id Names  Age salary 
+1 Paul 23 45678.45 
+2 Ann 45 3444.56
+3 Peter 21 12345.34
+4 Paul 23 45678.45
+5 Ann 45 3444.56
+6 Peter 21 12345.34
