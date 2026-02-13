@@ -42,3 +42,6 @@ if connection:
 p_table.add_rows(store2)
 p_table.align = "l"
 print(p_table)
+data_file = r"C:\Users\AURAGAM\Desktop\PythonTutorial\Exercises\pty.py"
+with open(data_file , mode="a") as fs :
+    fs.write(store1)

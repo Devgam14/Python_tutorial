@@ -46,3 +46,15 @@ success!
 DELETE FROM "My_Table";
 DELETE FROM sqlite_sequence WHERE name='My_Table'
 success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
+DELETE FROM "My_Table";
+DELETE FROM sqlite_sequence WHERE name='My_Table'
+success!
