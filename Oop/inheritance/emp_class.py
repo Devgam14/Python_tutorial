@@ -1,3 +1,4 @@
+
 class Person: ### can be called the super class or parent class 
     def __init__(self, id: int, name: str, age: int):
         self._id = id
